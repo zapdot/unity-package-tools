@@ -181,17 +181,18 @@ namespace JCMG.PackageTools.Editor
 				EditorConstants.GENERATE_VERSION_CONSTANTS_BUTTON_TEXT,
 				EditorConstants.GENERATE_VERSION_CONSTANTS_TOOLTIP)))
 			{
-				CodeGenTools.GenerateVersionConstants(config);
+				config.GenerateVersionConstants();
 			}
 
 			if (GUILayout.Button(EditorConstants.UPDATE_PACKAGE_BUTTON_TEXT))
 			{
-				FileTools.CreateOrUpdatePackageSource(config);
+				config.CreateOrUpdatePackageSource();
+				EditorUtility.RevealInFinder(config.packageDestinationPath);
 			}
 
 			if (GUILayout.Button(EditorConstants.EXPORT_LEGACY_PACKAGE_BUTTON_TEXT))
 			{
-				UnityFileTools.CompileLegacyPackage(config);
+				config.GenerateLegacyUnityPackage();
 			}
 		}
 
