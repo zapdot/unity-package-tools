@@ -40,7 +40,7 @@ namespace JCMG.PackageTools.Editor
 		public const string ASSET_EXTENSION = ".asset";
 		public const string META_FORMAT = "{0}.meta";
 		public const string GENERATED_FOLDER_NAME = "Generated";
-		public const string UNITY_PACKAGE_NAME_FORMAT = "{0}_v{1}.unityPackage";
+		public const string UNITY_PACKAGE_NAME_FORMAT = "{0}_v{1}.unitypackage";
 		public const char EMPTY_SPACE = ' ';
 		public const char UNDERSCORE = '_';
 		public static readonly string PROJECT_PATH =

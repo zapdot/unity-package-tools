@@ -155,6 +155,30 @@ namespace JCMG.PackageTools.Editor
 			return PackageManifestTools.GenerateJson(this);
 		}
 
+		/// <summary>
+		/// Generates the VersionConstants.cs file from this config.
+		/// </summary>
+		public void GenerateVersionConstants()
+		{
+			CodeGenTools.GenerateVersionConstants(this);
+		}
+
+		/// <summary>
+		/// Updates the Unity Package Manager source from this config.
+		/// </summary>
+		public void CreateOrUpdatePackageSource()
+		{
+			FileTools.CreateOrUpdatePackageSource(this);
+		}
+
+		/// <summary>
+		/// Generates the legacy Unity Package from this config.
+		/// </summary>
+		public void GenerateLegacyUnityPackage()
+		{
+			UnityFileTools.CompileLegacyPackage(this);
+		}
+
 		private void Reset()
 		{
 			packageVersion = EditorConstants.DEFAULT_PACKAGE_VERSION;

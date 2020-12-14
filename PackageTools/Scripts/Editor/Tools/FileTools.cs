@@ -149,11 +149,6 @@ namespace JCMG.PackageTools.Editor
 				}
 
 				Debug.LogFormat(EditorConstants.PACKAGE_UPDATE_SUCCESS_FORMAT, packageManifest.packageName);
-
-				if (!Application.isBatchMode)
-				{
-					EditorUtility.RevealInFinder(destinationPackageJsonPath);
-				}
 			}
 			catch (Exception ex)
 			{
