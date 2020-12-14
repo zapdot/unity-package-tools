@@ -16,7 +16,7 @@ MonoBehaviour:
   - Assets/JCMG
   packageIgnorePaths:
   - Assets/JCMG/PackageTools/Scripts/Editor/Tests
-  packageDestinationPath: ../../unity-package-tools_release
+  packageDestinationPath: ../../unity-package-tools-zapdot-release
   legacyPackageDestinationPath: ../Builds
   packageName: com.jeffcampbellmakesgames.packagetools
   displayName: JCMG Package Tools
